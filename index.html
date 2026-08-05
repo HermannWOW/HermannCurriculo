@@ -137,12 +137,13 @@
     }
 
     .avatar {
-      width: 64px;
-      height: 64px;
-      display: grid;
-      place-items: center;
+      width: 210px;
+      height: 210px;
+      display: block;
       border: 1px solid rgba(46, 110, 166, 0.34);
       border-radius: 18px;
+      object-fit: cover;
+      object-position: center;
       color: var(--color-blue-soft);
       background:
         linear-gradient(135deg, var(--color-navy), var(--color-navy-soft));
@@ -640,15 +641,15 @@
 
       .identity {
         min-width: 230px;
-        grid-template-columns: 48px 1fr;
+        grid-template-columns: 64px 1fr;
         align-items: center;
         gap: 12px;
       }
 
       .avatar {
-        width: 48px;
-        height: 48px;
-        border-radius: 14px;
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
         font-size: 0.9rem;
       }
 
@@ -792,7 +793,7 @@
   <div class="shell">
     <aside class="sidebar" aria-label="Perfil e navegação">
       <div class="identity">
-        <div class="avatar" aria-hidden="true">VH</div>
+        <img class="avatar" src="img/avatar.jpg" alt="Foto de Victor Gerhard Hermann">
         <div>
           <p class="identity__name">Victor Gerhard Hermann</p>
           <p class="identity__role">Desenvolvedor Full Stack .NET<br>Analista de Requisitos</p>
